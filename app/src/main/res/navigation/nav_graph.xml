@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/ListaHoroscopo">
+
+    <fragment
+        android:id="@+id/ListaHoroscopo"
+        android:name="com.example.horoscopo.ListaHoroscopo"
+        android:label="@string/first_fragment_label"
+        tools:layout="@layout/fragment_lista_horoscopo">
+
+        <action
+            android:id="@+id/action_ListaHoroscopo_to_DetalleHoroscopo"
+            app:destination="@id/DetalleHoroscopo">
+            <argument
+                android:name="signoId"
+                app:argType="integer" />
+        </action>
+
+    </fragment>
+    <fragment
+        android:id="@+id/DetalleHoroscopo"
+        android:name="com.example.horoscopo.DetalleHoroscopo"
+        android:label="@string/second_fragment_label"
+        tools:layout="@layout/fragment_detalle_horoscopo">
+
+        <action
+            android:id="@+id/action_DetalleHoroscopo_to_ListaHoroscopo"
+            app:destination="@id/ListaHoroscopo" />
+    </fragment>
+</navigation>
