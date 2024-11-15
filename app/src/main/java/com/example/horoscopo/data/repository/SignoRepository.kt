@@ -1,5 +1,9 @@
-package com.example.horoscopo
+package com.example.horoscopo.data.repository
 
+import com.example.horoscopo.data.remote.ApiService
+import com.example.horoscopo.data.model.SignoDetalle
+import com.example.horoscopo.data.model.SignoModel
+import com.example.horoscopo.data.database.SignosDatabase
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 

@@ -1,4 +1,4 @@
-package com.example.horoscopo
+package com.example.horoscopo.data.model
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey

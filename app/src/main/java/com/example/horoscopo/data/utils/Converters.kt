@@ -1,4 +1,4 @@
-package com.example.horoscopo
+package com.example.horoscopo.data.utils
 
 import androidx.room.TypeConverter
 import com.google.gson.Gson

@@ -1,4 +1,4 @@
-package com.example.horoscopo
+package com.example.horoscopo.ui.horoscopo.lista
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -9,6 +9,9 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.horoscopo.data.remote.ApiService
+import com.example.horoscopo.data.repository.SignoRepository
+import com.example.horoscopo.data.database.SignosDatabase
 import com.example.horoscopo.databinding.FragmentListaHoroscopoBinding
 
 class ListaHoroscopo : Fragment() {

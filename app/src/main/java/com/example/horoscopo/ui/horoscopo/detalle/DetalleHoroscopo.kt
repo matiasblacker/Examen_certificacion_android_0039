@@ -1,4 +1,4 @@
-package com.example.horoscopo
+package com.example.horoscopo.ui.horoscopo.detalle
 
 import android.content.Intent
 import android.os.Bundle
@@ -8,8 +8,10 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.lifecycle.ViewModelProvider
 import com.bumptech.glide.Glide
+import com.example.horoscopo.data.remote.ApiService
+import com.example.horoscopo.data.repository.SignoRepository
+import com.example.horoscopo.data.database.SignosDatabase
 import com.example.horoscopo.databinding.FragmentDetalleHoroscopoBinding
-import com.example.horoscopo.databinding.FragmentListaHoroscopoBinding
 
 
 class DetalleHoroscopo : Fragment() {

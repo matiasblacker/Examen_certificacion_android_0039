@@ -1,0 +1,162 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 1,
+    "identityHash": "d1b3bf428d739ba8107acfbd5e3d3345",
+    "entities": [
+      {
+        "tableName": "SignoModel",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER NOT NULL, `nombre` TEXT NOT NULL, `fechas` TEXT NOT NULL, `elemento` TEXT, `planetaRegente` TEXT, `simbolo` TEXT, `color` TEXT, `logo` TEXT, PRIMARY KEY(`id`))",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "nombre",
+            "columnName": "nombre",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "fechas",
+            "columnName": "fechas",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "elemento",
+            "columnName": "elemento",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "planetaRegente",
+            "columnName": "planetaRegente",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "simbolo",
+            "columnName": "simbolo",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "color",
+            "columnName": "color",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "logo",
+            "columnName": "logo",
+            "affinity": "TEXT",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "id"
+          ]
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "SignoDetalle",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER NOT NULL, `nombre` TEXT NOT NULL, `fechas` TEXT NOT NULL, `elemento` TEXT, `planetaRegente` TEXT, `simbolo` TEXT, `color` TEXT, `imageUrl` TEXT, `fortalezas` TEXT, `debilidades` TEXT, `descripcion` TEXT, `compatibilidad` TEXT, PRIMARY KEY(`id`))",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "nombre",
+            "columnName": "nombre",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "fechas",
+            "columnName": "fechas",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "elemento",
+            "columnName": "elemento",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "planetaRegente",
+            "columnName": "planetaRegente",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "simbolo",
+            "columnName": "simbolo",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "color",
+            "columnName": "color",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "imageUrl",
+            "columnName": "imageUrl",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "fortalezas",
+            "columnName": "fortalezas",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "debilidades",
+            "columnName": "debilidades",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "descripcion",
+            "columnName": "descripcion",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "compatibilidad",
+            "columnName": "compatibilidad",
+            "affinity": "TEXT",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "id"
+          ]
+        },
+        "indices": [],
+        "foreignKeys": []
+      }
+    ],
+    "views": [],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, 'd1b3bf428d739ba8107acfbd5e3d3345')"
+    ]
+  }
+}

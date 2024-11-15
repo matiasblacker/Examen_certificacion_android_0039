@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/ListaHoroscopo"
-        android:name="com.example.horoscopo.ListaHoroscopo"
+        android:name="com.example.horoscopo.ui.horoscopo.lista.ListaHoroscopo"
         android:label="@string/first_fragment_label"
         tools:layout="@layout/fragment_lista_horoscopo">
 
@@ -22,7 +22,7 @@
     </fragment>
     <fragment
         android:id="@+id/DetalleHoroscopo"
-        android:name="com.example.horoscopo.DetalleHoroscopo"
+        android:name="com.example.horoscopo.ui.horoscopo.detalle.DetalleHoroscopo"
         android:label="@string/second_fragment_label"
         tools:layout="@layout/fragment_detalle_horoscopo">
 

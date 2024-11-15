@@ -1,13 +1,16 @@
-package com.example.horoscopo
+package com.example.horoscopo.ui.horoscopo.lista
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import com.bumptech.glide.Glide
+import com.example.horoscopo.data.model.SignoModel
 import com.example.horoscopo.databinding.ItemBinding
 
-class SignoAdapter(private val onItemClick: (Int) -> Unit) : ListAdapter<SignoModel, SignoAdapter.SignoViewHolder>(SignoDiffCallback()){
+class SignoAdapter(private val onItemClick: (Int) -> Unit) : ListAdapter<SignoModel, SignoAdapter.SignoViewHolder>(
+    SignoDiffCallback()
+){
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): SignoViewHolder {
         val binding = ItemBinding.inflate(LayoutInflater.from(parent.context),parent, false)
         return SignoViewHolder(binding)

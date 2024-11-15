@@ -1,8 +1,8 @@
-package com.example.horoscopo
+package com.example.horoscopo.ui.horoscopo.lista
 
-import androidx.lifecycle.LiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.liveData
+import com.example.horoscopo.data.repository.SignoRepository
 import kotlinx.coroutines.Dispatchers
 
 

@@ -1,5 +1,6 @@
 package com.example.horoscopo
 
+import com.example.horoscopo.data.remote.ApiService
 import kotlinx.coroutines.runBlocking
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertNotNull

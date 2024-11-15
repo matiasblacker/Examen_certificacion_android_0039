@@ -1,19 +1,19 @@
 plugins {
     id("com.android.application")
     alias(libs.plugins.kotlin.android)
-    id("androidx.navigation.safeargs.kotlin") // Plugin para Safe Args
+    id("androidx.navigation.safeargs.kotlin")
     id("kotlin-android")
-    id("kotlin-kapt") // Esta línea está bien, es para el procesamiento de anotaciones de Kotlin
+    id("kotlin-kapt")
 }
 
 android {
     namespace = "com.example.horoscopo"
-    compileSdk = 35 // Cambiar a 35
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "com.example.horoscopo"
         minSdk = 27
-        targetSdk = 34 // Cambiar a 35
+        targetSdk = 33
         versionCode = 1
         versionName = "1.0"
 

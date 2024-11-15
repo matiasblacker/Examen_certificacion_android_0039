@@ -1,17 +1,10 @@
-package com.example.horoscopo
+package com.example.horoscopo.ui.main
 
 import android.os.Bundle
-import com.google.android.material.snackbar.Snackbar
 import androidx.appcompat.app.AppCompatActivity
-import androidx.navigation.findNavController
-import androidx.navigation.ui.AppBarConfiguration
-import androidx.navigation.ui.navigateUp
-import androidx.navigation.ui.setupActionBarWithNavController
-import android.view.Menu
-import android.view.MenuItem
 import androidx.navigation.NavController
 import androidx.navigation.fragment.NavHostFragment
-import com.example.horoscopo.databinding.ActivityMainBinding
+import com.example.horoscopo.R
 
 class MainActivity : AppCompatActivity() {
 
